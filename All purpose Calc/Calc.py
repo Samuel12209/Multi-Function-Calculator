@@ -71,3 +71,4 @@ if mathing == 7:
         c = math.hypot(a,b)
         print("-"*10)
         print(c)
+print("Thanks for using!")
