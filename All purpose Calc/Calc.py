@@ -3,7 +3,7 @@ import math
 print("Calculator")
 print("-"*10)
 
-mathing = int(input("What type of math do you want to do? (add, subtract, multiply, divide, exponent, square root,Pythagorean therum(1,2,3,4,5,6,7) "))
+mathing = int(input("What type of math do you want to do? (add, subtract, multiply, divide, exponent, square root,Pythagorean therum(1,2,3,4,5,6,7):  "))
 
 if mathing == 1:
   print("Adding")
