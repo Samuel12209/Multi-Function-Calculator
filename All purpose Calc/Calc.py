@@ -71,4 +71,14 @@ if mathing == 7:
         c = math.hypot(a,b)
         print("-"*10)
         print(c)
+    
+    if typep =="A"
+        c = int(input("C: "))
+        b = int(input("B: "))
+        a = math.sqrt(c ** 2 - b ** 2)
+        print("-"*10)
+        print(a)
+
+
+
 print("Thanks for using!")
