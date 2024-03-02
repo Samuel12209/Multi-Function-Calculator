@@ -3,7 +3,7 @@ import math
 print("Calculator")
 print("-"*10)
 
-mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, PI(1,2,3,4,5,6,7,8):  "))
+mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, Pi |(1,2,3,4,5,6,7,8): "))
 
 if mathing == 1:
   print("Adding")
@@ -13,7 +13,7 @@ if mathing == 1:
   n3 = n1 + n2
   print("-"*10)
   print(n3)
-
+  print("-"*10)
 if mathing == 2:
   print("Subtracting")
   print("-"*10)
@@ -22,7 +22,7 @@ if mathing == 2:
   n3 = n1 - n2
   print("-"*10)
   print(n3)
-
+  print("-"*10)
 if mathing == 3:
   print("Multiplying")
   print("-"*10)
@@ -31,7 +31,7 @@ if mathing == 3:
   n3 = n1 * n2
   print("-"*10)
   print(n3)
-
+  print("-"*10)
 
 if mathing == 4:
   print("Dividing")
@@ -41,7 +41,7 @@ if mathing == 4:
   n3 = n1 / n2
   print("-"*10)
   print(n3)
-
+  print("-"*10)
 
 
 if mathing == 5:
@@ -52,14 +52,16 @@ if mathing == 5:
   n3 = n1 ** n2
   print("-"*10)
   print(n3)
-
+  print("-"*10)
 
 if mathing == 6:
   print("Square Roots")
   print("-"*10)
   n1 = int(input("Number: ") )
   n3 = math.sqrt(n1)
+  print("-"*10)
   print(n3)
+  print("-"*10)
 
 if mathing == 7:
     print("Pythagorean Therum")
@@ -87,7 +89,28 @@ if mathing == 7:
         print(b)
         print("-"*10)
 
-if typep == "8":
-  print("PI")
-  typep1 = input("Radius, Circumference, area")
+if mathing == 8:
+    print("Pi")
+    math_type = input("Radius, Circ, Area: ")
+    print(math_type)
+    if math_type == "Radius":
+      print("-"*10)
+      area = int(input("Area: "))
+      radius = math.sqrt(area / math.pi)
+      print(radius)
+      print("-"*10)
+    if math_type =="Circ":
+      print("-"*10)
+      radius = float(input("Radius: "))
+      circumference = 2 * math.pi * radius
+      print(circumference)
+      print("-"*10)
+
+    if math_type =="Area":
+      print("-"*10)
+      radius = float(input("Radius: "))
+      area = math.pi * radius ** 2
+      print(area)
+      print("-"*10)
+
 print("Thanks for using!")
