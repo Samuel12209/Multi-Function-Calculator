@@ -3,7 +3,7 @@ import math
 print("Calculator")
 print("-"*10)
 
-mathing = int(input("What type of math do you want to do? (add, subtract, multiply, divide, exponent, square root,Pythagorean therum(1,2,3,4,5,6,7):  "))
+mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, PI(1,2,3,4,5,6,7,8):  "))
 
 if mathing == 1:
   print("Adding")
@@ -87,4 +87,7 @@ if mathing == 7:
         print(b)
         print("-"*10)
 
+if typep == "8":
+  print("PI")
+  typep1 = input("Radius, Circumference, area")
 print("Thanks for using!")
