@@ -1,4 +1,6 @@
 from collections.abc import Sequence
+import os
+import time
 import math
 print("Calculator")
 print("-"*10)
@@ -114,3 +116,4 @@ if mathing == 8:
       print("-"*10)
 
 print("Thanks for using!")
+yesno = input("Finsished?(Enter To Escape)")
