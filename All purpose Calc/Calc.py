@@ -3,7 +3,7 @@ print("Calculator")
 print("-"*10)
 
 
-mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, Pi, Square |(1,2,3,4,5,6,7,8,9): "))
+mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, Pi, Square, Tax |(1,2,3,4,5,6,7,8,9,10): "))
 
 if mathing == 1:
   print("Adding")
@@ -129,6 +129,14 @@ if mathing == 9:
     n2 = int(input("Side2: "))
     n3 = n1 * 2 + n2 * 2
     print(n3)
+  
+if mathing == 10:
+  print("Tax")
+  print("-"*10)
+  amount =int(input("How much household income do you have: "))
+  tax = str(round(amount/10.725))
+  print("you owe: " + tax + " Dollars")
+  print("-"*10)
 
 print("Thanks for using!")
 yesno = input("Finsished?(Enter To Escape)")
