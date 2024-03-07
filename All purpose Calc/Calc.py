@@ -1,9 +1,7 @@
-from collections.abc import Sequence
-import os
-import time
 import math
 print("Calculator")
 print("-"*10)
+
 
 mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, Pi, Square |(1,2,3,4,5,6,7,8,9): "))
 
@@ -93,6 +91,7 @@ if mathing == 7:
 
 if mathing == 8:
     print("Pi")
+    print("-"*10)
     math_type = input("Radius, Circ, Area: ").lower()
     print(math_type)
     if math_type == "radius":
@@ -132,4 +131,4 @@ if mathing == 9:
     print(n3)
 
 print("Thanks for using!")
-yesno = input("Finsished?(Enter To Escape)").lower
+yesno = input("Finsished?(Enter To Escape)")
