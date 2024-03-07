@@ -5,7 +5,7 @@ import math
 print("Calculator")
 print("-"*10)
 
-mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, Pi |(1,2,3,4,5,6,7,8): "))
+mathing = int(input("What type of math do you want to do? (Add, Subtract, Multiply, Divide, Exponent, Square root, Pythagorean therum, Pi, Square |(1,2,3,4,5,6,7,8,9): "))
 
 if mathing == 1:
   print("Adding")
@@ -114,6 +114,22 @@ if mathing == 8:
       area = math.pi * radius ** 2
       print(area)
       print("-"*10)
+if mathing == 9:
+  print("sqaure")
+  print("-"*10)
+  mathtype = input("Area, Perimiter: ")
+  if mathtype == "Area":
+    print("Area")
+    n1 = int(input("Side: "))
+    n2 = int(input("Side: "))
+    n3 = n1 * n2
+    print(n3)
+  if mathtype =="Perimiter":
+    print("Perimiter")
+    n1 = int(input("Side1: "))
+    n2 = int(input("Side2: "))
+    n3 = n1 * 2 + n2 * 2
+    print(n3)
 
 print("Thanks for using!")
 yesno = input("Finsished?(Enter To Escape)")
